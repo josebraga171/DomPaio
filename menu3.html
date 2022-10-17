@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Vingança de D.Paio </title>
+		<script src="code/options.js"></script>
+		<style>
+			body
+			{
+				background-image: url("./resources/back.png");
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-position: center; 
+			}
+
+			input
+			{
+				background-color: Transparent;
+				background-repeat: no-repeat;
+				border: none;
+				outline: 0;
+				cursor:pointer;
+				overflow: hidden;  
+				position: absolute;
+			}
+
+			#sairBotao
+			{
+				right: 5%;
+				top: 80%;
+			}
+
+			#musicaB
+			{
+				left: 45%;
+				bottom: 35%;
+			}
+
+			#somB
+			{
+				left: 45%;
+				bottom: 20%;
+			}
+
+			#opcoes
+			{
+				position: absolute;
+				left: 6%;
+				top: 37%;
+			}
+
+			#musica
+			{
+				position: absolute;
+				left:5%;
+				bottom: 35%;
+			}
+
+			#som
+			{
+				position: absolute;
+				left:5%;
+				bottom: 20%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="768" height="768" style="display: block; margin: auto; border: none; "></canvas>
+
+		<figure>
+
+		<img id="musica" src="./resources/musica.png">
+
+		<img id="som" src="./resources/som.png">
+
+		<img id="opcoes" src="./resources/opcoes.png">
+
+		</figure>
+
+		<main>
+			<nav>
+				<input type="image" id="musicaB" src="./resources/soundOFF.png"></input>
+				<input type="image" id="somB" src="./resources/soundOFF.png"></input>
+				<input type="image" id="sairBotao" src="./resources/sairBotOFF.png"></input>
+			</nav>	
+
+			<audio loop>
+				<source src="resources/MarchTemplars.mp3" type="audio/mpeg">
+			</audio>
+
+		</main>
+	</body>
+</html>

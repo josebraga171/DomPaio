@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Vingança de D.Paio</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="code/game.js" defer="true"></script>
+		<script type="text/javascript" src="code/Viewport.js" defer="true"></script>
+		<script type="text/javascript" src="code/Entity.js" defer="true"></script>
+		<script type="text/javascript" src="code/Character.js" defer="true"></script>
+		<script type="text/javascript" src="code/Player.js" defer="true"></script>
+		<script type="text/javascript" src="code/Enemy.js" defer="true"></script>
+		<script type="text/javascript" src="code/Object.js" defer="true"></script>
+		<script type="text/javascript" src="code/CollisionBox.js" defer="true"></script>
+		<script type="text/javascript" src="code/SpriteSheet.js" defer="true"></script>
+		<script type="text/javascript" src="code/UI.js" defer="true"></script>
+		<script type="text/javascript" src="code/MapReader.js" defer="true"></script>
+		<script type="text/javascript" src="code/Pickup.js" defer="true"></script>
+		<script type="text/javascript" src="code/Bound.js" defer="true"></script>
+		<script type="text/javascript" src="code/Trigger.js" defer="true"></script>
+		<script type="text/javascript" src="code/Friend.js" defer="true"></script>
+
+	</head>
+
+	<main>
+		<nav>
+			<input type="image" id="sairBotao" src="./resources/sairbot.png"></input>
+			<input type="image" id="replayBotao" src="./resources/replay.png"></input>
+		</nav>
+	</main>
+
+	<style>
+		#sairBotao{
+			position: absolute;
+	 		right: 2%;
+	 		bottom: 2%;
+	 		}
+
+	 	#replayBotao{
+	 		position: absolute;
+	 		right: 12%;
+	 		bottom: 2%;
+	 	}
+
+	</style>
+
+	<div id="wrapper">
+		<canvas id="canvas" width="768" height="768" style="display: block; margin: auto; border: none"></canvas>
+		<canvas id="layoutCanvas" width="0" height="0" style="display: none"></canvas>
+		<canvas id="layoutHitCanvas" width="0" height="0" style="display: none"></canvas>
+		<canvas id="entityCanvas" width="0" height="0" style="display: none"></canvas>
+		<canvas id="entityHitCanvas" width="0" height="0" style="display: none"></canvas>
+	</div>
+	<audio>
+		<source id="audioSword1" src="assets/SwordSounds/Sword_1.mp3" type="audio/mpeg">
+	</audio>
+	<audio>
+		<source id="audioSword2" src="assets/SwordSounds/Sword_2.mp3" type="audio/mpeg">
+	</audio>
+	<audio>
+		<source id="audioSword3" src="assets/SwordSounds/Sword_3.mp3" type="audio/mpeg">
+	</audio>
+	<audio>
+		<source id="audioSword4" src="assets/SwordSounds/Sword_4.mp3" type="audio/mpeg">
+	</audio>
+	<audio>
+		<source id="deathSound" src="assets/SwordSounds/Death_1.mp3" type="audio/mpeg">
+	</audio>
+	<audio>
+		<source id="deathPlayer" src="assets/SwordSounds/DeathPlayer_1.mp3" type="audio/mpeg">
+	</audio>
+	<audio>
+		<source id="dyingPlayer" src="assets/SwordSounds/DyingPlayer_1.mp3" type="audio/mpeg">
+	</audio>
+	<audio>
+		<source id="enemySword1" src="assets/SwordSounds/Enemy_Sword_1.mp3" type="audio/mpeg">
+	</audio>
+	<audio>
+		<source id="BackGroundMusic" src="assets/SwordSounds/naturesounds.ogg" type="audio/mpeg">
+	</audio>
+	<audio>
+		<source id="Player_Detected1" src="assets/SwordSounds/Player_Detected_1.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio>
+		<source id="eat" src="assets/SwordSounds/eat1.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio>
+		<source id="eat" src="assets/SwordSounds/pickup.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio>
+		<source id="drinking" src="assets/SwordSounds/Player_Drinking_1.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio>
+		<source id="playerWin" src="assets/SwordSounds/Player_Win_1.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio>
+		<source id="playerWin" src="assets/SwordSounds/Background_Music_1.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio>
+		<source id="friendSword" src="assets/SwordSounds/Friend_Sword_1.mp3" type="audio/mpeg">
+	</audio>
+
+</html>

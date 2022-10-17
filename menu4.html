@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="code/help.js"></script>
+		<style>
+			body {
+	 			background-image: url("./resources/ajuda.png");
+	 			background-repeat: no-repeat;
+  				background-attachment: fixed;
+  				background-position: center;
+	 		}
+
+	 		input {
+	 			background-color: Transparent;
+			    background-repeat: no-repeat;
+			    border: none;
+			    outline: 0;
+			    cursor:pointer;
+			    overflow: hidden;
+				position: absolute;
+	 		}
+
+	 		#sairBotaoAjuda{
+	 			right: 5%;
+	 			top: 80%;
+	 		}
+
+	 	</style>
+	</head>
+	
+	<body>
+		<p id="message"></p>
+		<canvas id="canvas" width="768" height="768" style="display: block; margin: auto; "></canvas>
+	</body>
+	<nav>
+		<input type="image" id="sairBotaoAjuda" src="./resources/sairBotOFF.png"></input>
+	</nav>	
+</html>
